@@ -1,0 +1,37 @@
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d0315;
+    height: 100px;
+    z-index: 100;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    color: rgb(233, 66, 211);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
