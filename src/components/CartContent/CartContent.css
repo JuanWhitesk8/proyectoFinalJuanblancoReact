@@ -1,0 +1,27 @@
+.cartContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.cartContent > img {
+    height: 120px;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+.cartTotal {
+    text-align: center;
+}
+
+.objet-cart {
+    margin-top: 150px;
+}
+
+.cart-message-center {
+    margin-top: 300px;
+    color: rgb(49, 4, 49);
+    font-size: 100px;
+}

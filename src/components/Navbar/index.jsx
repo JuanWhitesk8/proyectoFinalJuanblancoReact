@@ -10,12 +10,12 @@ function Navbar() {
   return (
     <nav>
       <ul>
-        <li><img className='logo' src="/images/logotrp.png" alt="logo" /></li>
+        <li> <Link to="/"> <img className='logo' src="./img/logotrp.png" alt="logo" /> </Link> </li>
         <li> <Link to="/"> <p>Inicio</p> </Link> </li>
-        <li> <Link to="productos"> <p>Productos</p> </Link> </li>
-        <li> <Link to="/"> <p>Nosotros</p> </Link> </li>
-        <li> <Link to="/"> <p>Contacto</p> </Link> </li>
-        <li> <CartWidget /> </li>
+        <li> <Link to="/dama"> <p>Dama</p> </Link> </li>
+        <li> <Link to="/caballero"> <p>Caballero</p> </Link> </li>
+        <li> <Link to="/contacto"> <p>Contacto</p> </Link> </li>
+        <li> <Link to="/cart"> <CartWidget /> </Link> </li>
       </ul>
     </nav>
   );

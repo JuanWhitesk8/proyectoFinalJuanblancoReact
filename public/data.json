@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "TelaFria",
+        "price": 27000,
+        "category": "woman",
+        "description": "Hermosa camiseta en telafria con acabados de calidad y estampados americanos, confeccionadas por mujeres Colombianas",
+        "img": "https://images.pexels.com/photos/12989316/pexels-photo-12989316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "quanty": 1
+    },
+    {
+        "id": 2,
+        "name": "TelaFria",
+        "price": 27000,
+        "category": "woman",
+        "description": "Hermosa camiseta en telafria con acabados de calidad y estampados americanos, confeccionadas por mujeres Colombianas",
+        "img": "https://images.pexels.com/photos/14007293/pexels-photo-14007293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "quanty": 1
+    },
+    {
+        "id": 3,
+        "name": "TelaFria",
+        "price": 27000,
+        "category": "woman",
+        "description": "Hermosa camiseta en telafria con acabados de calidad y estampados americanos, confeccionadas por mujeres Colombianas",
+        "img": "https://images.pexels.com/photos/14823052/pexels-photo-14823052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "quanty": 1
+    },
+    {
+        "id": 4,
+        "name": "Algodon",
+        "price": 35000,
+        "category": "men",
+        "description": "Hermosa camiseta en Algodon con acabados de calidad y estampados americanos, confeccionadas por mujeres Colombianas",
+        "img": "https://images.pexels.com/photos/4925894/pexels-photo-4925894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "quanty": 1
+    },
+    {
+        "id": 5,
+        "name": "Algodon",
+        "price": 35000,
+        "category": "men",
+        "description": "Hermosa camiseta en Algodon con acabados de calidad y estampados americanos, confeccionadas por mujeres Colombianas",
+        "img": "https://images.pexels.com/photos/13115940/pexels-photo-13115940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "quanty": 1
+    },
+    {
+        "id": 6,
+        "name": "Algodon",
+        "price": 35000,
+        "category": "men",
+        "description": "Hermosa camiseta en Algodon con acabados de calidad y estampados americanos, confeccionadas por mujeres Colombianas",
+        "img": "https://images.pexels.com/photos/12922546/pexels-photo-12922546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "quanty": 1
+    }
+]

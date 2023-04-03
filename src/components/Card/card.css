@@ -6,13 +6,14 @@ img {
     
 }
 
-p {
+.names {
     text-align: center;
 }
 
-h4 {
+.prices {
     text-align: center;
 }
+
 
 .container {
     border: 1px solid rgb(233, 66, 211);
@@ -20,14 +21,29 @@ h4 {
     padding: 10px;
     width: 250px;
     display: inline-block;
-    margin-left: 55px;
-    margin-top: 30px;
+    margin-top: 50px;
     
 }
 
 .container:hover {
-    scale: 1.2;
+    scale: 1.09;
     transition: .3s;
+    background-color: rgb(243, 152, 228);
 }
-   
+
+.container button {
+    text-align: center;
+    color: white;
+    background-color: rgb(233, 66, 211);
+    border: none;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.container button:hover {
+    background-color: rgb(99, 8, 87);
+}
 

@@ -1,0 +1,23 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url(https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+
+}
+
+.banner-conatiner {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1 {
+    padding-top: 350px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+}

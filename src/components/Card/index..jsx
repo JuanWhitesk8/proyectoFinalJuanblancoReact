@@ -1,16 +1,29 @@
 import { Link } from 'react-router-dom'
-import styles from './card.css'
+import './card.css'
+import { useContext } from "react";
+import { dataContext } from "../Context/DataContext";
 
-const Card = ({ producto }) => {
+const Card = ({ products }) => {
+  const { data, cart, setCart,} = useContext(dataContext)
+
+  const buyProducts = (products) => {
+
+      setCart([...cart, products, ])
+  }
 
   return (
-    <Link to= {`${producto.id}`} >
-      <div className='container'>
-        <img src={producto.image} alt="" />
-        <h4> {producto.title} </h4>
-        <p>$ {producto.price}  </p>
+    <div >
+    
+      <div className='container' >
+        <Link to= {`${products.id}`} >
+          <img src={products.img} alt="" />
+          </Link>
+        <h4 className='names'> {products.name} </h4>
+        <p className='prices'>$ {products.price}  </p>
+        <button onClick={()=> buyProducts(products)}>Comprar</button>
       </div>
-    </Link>
+    
+    </div>
   )
 }
 

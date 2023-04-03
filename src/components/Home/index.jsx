@@ -1,11 +1,14 @@
 import React from 'react'
 import './home.css'
+import Banner from '../Banner/Banner'
+import Products from '../Products/Products'
 
 const Home = () => {
   return (
-    <h2>
-      Bienvenidos a Nuestra Tienda
-    </h2>
+    <>
+      <Banner />
+      <div className='product-card-container' ><Products /></div>
+    </>
   )
 }
 
