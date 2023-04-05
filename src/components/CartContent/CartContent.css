@@ -12,6 +12,12 @@
     margin: 0;
 }
 
+.name {
+   
+        padding-top: 50px;
+    
+}
+
 .cartTotal {
     text-align: center;
 }
@@ -24,4 +30,38 @@
     margin-top: 300px;
     color: rgb(49, 4, 49);
     font-size: 100px;
+}
+
+.counter-button {
+    text-align: center;
+    color: white;
+    background-color: rgb(233, 66, 211);
+    border: none;
+    outline: 0;
+    margin-top: 50px;
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.counter-button:hover {
+    background-color: rgb(99, 8, 87);
+}
+
+.delete-cart {
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 0, 85);
+    border: none;
+    outline: 0;
+    margin-top: 50px;
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-cart:hover {
+    background-color: rgb(102, 0, 0);
 }

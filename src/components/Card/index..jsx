@@ -4,12 +4,8 @@ import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
 
 const Card = ({ products }) => {
-  const { data, cart, setCart,} = useContext(dataContext)
+  const { data, cart, setCart, buyProducts} = useContext(dataContext)
 
-  const buyProducts = (products) => {
-
-      setCart([...cart, products, ])
-  }
 
   return (
     <div >

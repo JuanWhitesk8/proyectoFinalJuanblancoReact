@@ -2,12 +2,19 @@ import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
 
 const CartItemCounter = ({ products, quanty }) => {
-    const { buyProducts} = useContext(dataContext);
+    const { cart, setCart, buyProducts} = useContext(dataContext);
+
+
+    const decrese = () => {
+      const productrepeat = cart.find((item) => item.id === products.id)
+
+      productrepeat.quanty !== 1 && setCart(cart.map((item)=> item.id === products.id ? {...products, quanty: productrepeat.quanty - 1 } : item))
+    }
   return (
     <>
-        <p className='counter-button'>-</p>
-        <p> {quanty} </p>
-        <p className='counter-button' onClick={()=> buyProducts(products)} >+</p>
+        <button className='counter-button' onClick={decrese}>-</button>
+        <p className="name"> {quanty} </p>
+        <button className='counter-button' onClick={()=> buyProducts(products)} >+</button>
    </>
   )
 }

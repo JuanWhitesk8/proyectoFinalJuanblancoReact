@@ -9,6 +9,7 @@ import CartContent from './components/CartContent/CartContent'
 import DataProvider from './components/Context/DataContext'
 import Products from './components/Products/Products'
 
+
 function App() {
   const [productos, setProductos] = useState([])
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Products />} />
         <Route path='/productos/:id' element={ <ProductItem /> } />
+        <Route path='/categoria/:category' element={ <div className='product-card-container'><Products /></div> } />
         <Route path='/cart' element={ <CartContent />} />
       </Routes>
     </div>
