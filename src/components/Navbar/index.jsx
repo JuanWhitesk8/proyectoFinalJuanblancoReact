@@ -1,36 +1,23 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import CartWidget from '../CartWidget/cartWidget';
-import './navbar.css';
+import React from 'react'
+import CartWidget from '../CartWidget'
+import './navbar.css'
+import { NavLink } from 'react-router-dom'
 
-const Products = () => {
-  const { data, buyProducts} = useContext(dataContext);
-
-
-return data.map((products)=> {
+const NavBar = () => {
   return (
-  <>
-      <div>
-      <Card key={products.id} products={products} />
-      </div>
-  </>
-  )
-}) }
-
-function Navbar() {
-
-  return (
-    <nav>
+    <div>
+      <nav>
       <ul>
-        <li> <Link to="/"> <img className='logo' src="./img/logotrp.png" alt="logo" /> </Link> </li>
-        <li> <Link to="/"> <p>Inicio</p> </Link> </li>
-        <li> <Link to="categoria/dama"> <p>Dama</p> </Link> </li>
-        <li> <Link to="categoria/caballero"> <p>Caballero</p> </Link> </li>
-        <li> <Link to="/contacto"> <p>Contacto</p> </Link> </li>
-        <li> <Link to="/cart"> <CartWidget /> </Link> </li>
+        <li> <NavLink to="/"><img className='logo' src="./img/logotrp.png" alt="logo" /></NavLink> </li>
+        <li>  <NavLink to="/"> <p>Inicio</p> </NavLink>     </li>
+        <li>  <NavLink to='/categoria/woman'> <p>Dama</p> </NavLink>       </li>
+        <li>  <NavLink to='/categoria/men'> <p>Caballero</p> </NavLink>  </li>
+        <li>  <NavLink to="/contacto"> <p>Contacto</p> </NavLink>   </li>
+        <li>  <NavLink to="/cart"> <CartWidget /> </NavLink> </li>
       </ul>
     </nav>
-  );
+    </div>
+  )
 }
 
-export default Navbar;
+export default NavBar

@@ -28,10 +28,14 @@
   }
 
   a:hover {
-    color: white;
+    color: rgb(34, 1, 65);
   }
 
   .logo {
     width: 70px;
     height: 70px;
+  }
+
+  li p {
+    color: white;
   }

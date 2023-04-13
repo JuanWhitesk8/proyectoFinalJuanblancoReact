@@ -1,0 +1,47 @@
+.container-detail {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .container-detail{
+        width: 70%;
+    }
+
+}
+
+.detail {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail_img {
+    margin-top: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    margin-top: 200px;
+    width: 100%;
+}
+    
+@media screen and (min-width: 768px) {
+
+    .detail_img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .content {
+        padding-left: 3rem;
+        width: 50%;
+    }
+
+}
+    

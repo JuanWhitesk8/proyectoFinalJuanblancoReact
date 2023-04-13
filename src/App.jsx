@@ -1,32 +1,31 @@
 import './App.css'
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import Navbar from './components/Navbar'
-import ProductItem from './components/ProductItem'
-import CartContent from './components/CartContent/CartContent'
-import DataProvider from './components/Context/DataContext'
-import Products from './components/Products/Products'
+import React from 'react'
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ItemListContainer from './components/ItemListContainer'
+import NavBar from './components/Navbar'
+import ItemDetailContainer from './components/ItemDetailContainer/Index'
+import Cart from './components/Cart'
+import CartProvider from './context/CartContext'
 
 function App() {
-  const [productos, setProductos] = useState([])
-
   return (
-    <DataProvider>
-    <div>
-      < Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/productos' element={<Products />} />
-        <Route path='/productos/:id' element={ <ProductItem /> } />
-        <Route path='/categoria/:category' element={ <div className='product-card-container'><Products /></div> } />
-        <Route path='/cart' element={ <CartContent />} />
-      </Routes>
-    </div>
-    </DataProvider>
-  )
-}
+      <>
+          <CartProvider>
+            <NavBar />
+            <Routes> 
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
+            </Routes>
+          </CartProvider>
+      </>
+    )
+  }
+
+
+  
+
 
 export default App
