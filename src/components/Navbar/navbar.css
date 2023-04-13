@@ -25,10 +25,11 @@
   a {
     color: rgb(233, 66, 211);
     text-decoration: none;
+    font-size: 18px;
   }
 
   a:hover {
-    color: rgb(34, 1, 65);
+    color: rgb(255, 255, 255);
   }
 
   .logo {

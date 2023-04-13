@@ -7,9 +7,10 @@ const cartItem = ({ product }) => {
     const { removeProduct } = useCartContex()
 
   return (
+    <>
     <div className='itemCart'>
         <img src={product.img} alt={product.name} />
-        <div>
+        <div className='element'>
             <p>Titulo: {product.name} </p>
             <p>Cantidad: {product.quantity} </p>
             <p>precio: {product.price} </p>
@@ -18,6 +19,7 @@ const cartItem = ({ product }) => {
         </div>
       
     </div>
+    </>
   )
 }
 

@@ -1,11 +1,27 @@
 .itemCart {
     display: flex;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(175, 59, 152);
+    padding-bottom: 20px;
+    padding-top: 20px;
     max-width: 500px;
-    margin: 1rem auto;
+    margin: auto;
 }
 
 .itemCart img {
     width: 200px;
     margin-right: 1rem;
+}
+
+.itemCart button {
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.element {
+    font-weight: 900;
+    text-align: center;
+    padding-top: 50px;
 }

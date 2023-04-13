@@ -20,9 +20,9 @@ const ItemDetail = ({ data }) => {
         <div className='detail'>
             <img className='detail_img' src={data.img} alt="ropa" />
             <div className='content'>
-                <h3> {data.name} </h3>
-                <h4> {data.category} </h4>
-                <h3> {data.description} </h3>
+                <h3 className='content-tittle'> {data.name} </h3>
+                <h4 className='content-category'> {data.category} </h4>
+                <h3 className='content-description'> {data.description} </h3>
                 {
                   goToCart
                   ? <Link to="/cart">Terminar compra</Link>

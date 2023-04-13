@@ -9,10 +9,10 @@ const NavBar = () => {
       <nav>
       <ul>
         <li> <NavLink to="/"><img className='logo' src="./img/logotrp.png" alt="logo" /></NavLink> </li>
-        <li>  <NavLink to="/"> <p>Inicio</p> </NavLink>     </li>
-        <li>  <NavLink to='/categoria/woman'> <p>Dama</p> </NavLink>       </li>
-        <li>  <NavLink to='/categoria/men'> <p>Caballero</p> </NavLink>  </li>
-        <li>  <NavLink to="/contacto"> <p>Contacto</p> </NavLink>   </li>
+        <li>  <NavLink to="/"> <h5>Inicio</h5> </NavLink>     </li>
+        <li>  <NavLink to='/categoria/woman'> <h5>Dama</h5> </NavLink>       </li>
+        <li>  <NavLink to='/categoria/men'> <h5>Caballero</h5> </NavLink>  </li>
+        <li>  <NavLink to="/form"> <h5>Contacto</h5> </NavLink>   </li>
         <li>  <NavLink to="/cart"> <CartWidget /> </NavLink> </li>
       </ul>
     </nav>
