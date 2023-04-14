@@ -18,11 +18,11 @@ img {
     
 }
 
-.container a h4 {
+.container .name {
     text-align: center;
 }
 
-.container a p {
+.container .price {
     text-align: center;
 }
 
@@ -37,10 +37,11 @@ img {
     color: white;
     background-color: rgb(233, 66, 211);
     border: none;
+    border-radius: 6px;
     outline: 0;
     padding: 10px;
     cursor: pointer;
-    margin-left: 80px;
+    margin-left: 55px;
     margin-top: 10px;
     transition: background-color 0.5s ease-in-out;
 }

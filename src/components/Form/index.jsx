@@ -1,6 +1,18 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import './Form.css'
+import Swal from 'sweetalert2'
+
+const Send = () => {
+    Swal.fire(
+        'Mensaje Enviado',
+        'Te registraste con Exito',
+        'success'
+      )
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+}
 
 const Form = () => {
   const { register, handleSubmit } = useForm() 
@@ -24,7 +36,7 @@ const Form = () => {
                 <label>Direccion</label>
                 <input type="text" {...register('country')} />
             </div>
-            <button type='submit'>Send</button>
+            <button onClick={Send} type='submit'>Send</button>
         </form>
     
     </div>

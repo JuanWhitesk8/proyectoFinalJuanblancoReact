@@ -5,6 +5,7 @@ import ItemCount from '../ItemCount'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+
 const ItemDetail = ({ data }) => {
 
   const [goToCart, setGotoCart] = useState(false)
@@ -25,7 +26,7 @@ const ItemDetail = ({ data }) => {
                 <h3 className='content-description'> {data.description} </h3>
                 {
                   goToCart
-                  ? <Link to="/cart">Terminar compra</Link>
+                  ? <Link to="/cart" className='go-to-cart'> <button> Terminar compra </button></Link>
                   :<ItemCount initial={1} stock={30} onAdd={onAdd} />
                 }
                 

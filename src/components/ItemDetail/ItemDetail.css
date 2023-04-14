@@ -28,6 +28,15 @@
     object-fit: cover;
 }
 
+.go-to-cart button{
+    margin-left: 170px;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .container-detail{
         width: 70%;

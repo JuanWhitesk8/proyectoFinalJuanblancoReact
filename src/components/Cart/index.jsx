@@ -3,6 +3,7 @@ import { useCartContex } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 import CartItem from '../CartItem'
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
+import Swal from 'sweetalert2'
 import './Cart.css'
 
 
@@ -27,10 +28,18 @@ const Cart = () => {
       addDoc(orderCollection, order)
         .then(({ id }) => console.log(id) )
 
+        Swal.fire(
+          'Excelente!',
+          'Gracias por tu Compra',
+          'success'
+        )
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+
 
   }
-
-
 
 
 
